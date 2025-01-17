@@ -1,0 +1,23 @@
+{
+  "name": "translation",
+  "version": "0.1.0",
+  "description": "Module de translation",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@typescript-eslint/typescript-estree": "^8.20.0"
+  }
+}
