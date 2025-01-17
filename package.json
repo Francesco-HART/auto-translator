@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "dev": "tsc -w",
     "test": "jest"
   },
@@ -18,6 +19,7 @@
   "keywords": [],
   "author": "",
   "dependencies": {
-    "@typescript-eslint/typescript-estree": "^8.20.0"
+    "@typescript-eslint/typescript-estree": "^8.20.0",
+    "husky": "^9.1.7"
   }
 }
