@@ -6,7 +6,7 @@ export type TextEntry = {
 };
 
 export const detectTranslationsNeeds = (
-  detectHardCodedStringGateway: DetectHardCodedStringGateway
+  detectHardCodedStringGateway: FakeDetectHardCodedStringProvider
 ) => {
   return function handle(filesPath: string[]): TextEntry[] {
     return filesPath
@@ -19,12 +19,12 @@ export const detectTranslationsNeeds = (
   };
 };
 
-export interface DetectHardCodedStringGateway {
+export interface DetectHardCodedStringProvider {
   extractTextEntriesFromFile(filesPath: string): Segment[];
 }
 
-export class FakeDetectHardCodedStringGateway
-  implements DetectHardCodedStringGateway
+export class FakeDetectHardCodedStringProvider
+  implements DetectHardCodedStringProvider
 {
   hardCodeText: Map<string, Segment[]> = new Map();
   extractTextEntriesFromFile(filePath: string): Segment[] {
