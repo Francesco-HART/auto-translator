@@ -1,21 +1,21 @@
 import {
   detectTranslationsNeeds,
-  FakeDetectHardCodedStringGateway,
+  FakeDetectHardCodedStringProvider,
   TextEntry,
 } from "../app/detect-translations-needs";
 import { Segment, SegmentBuilder } from "./segment.builder";
 
 describe("Detect translation needs in a project", () => {
-  let detectHardCodedStringGateway: FakeDetectHardCodedStringGateway;
+  let detectHardCodedStringGateway: FakeDetectHardCodedStringProvider;
   let detectTranslationNeedsHandle: ReturnType<typeof detectTranslationsNeeds>;
 
   beforeEach(() => {
-    detectHardCodedStringGateway = new FakeDetectHardCodedStringGateway();
+    detectHardCodedStringGateway = new FakeDetectHardCodedStringProvider();
     detectTranslationNeedsHandle = detectTranslationsNeeds(
       detectHardCodedStringGateway
     );
   });
-  describe("detect if need translation or not", () => {
+  describe("detect if need translation or", () => {
     it("No text is found in the project", () => {
       const needTranslation = whenSearchingForTranslationNeeds([]);
       thenNoTranslationNeeded(needTranslation);
