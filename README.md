@@ -19,7 +19,7 @@
 npm install auto-translator
  ou
 yarn add auto-translator
-ou
+ ou
 pnpm add auto-translator
 ```
 
@@ -29,6 +29,7 @@ pnpm add auto-translator
 **Filtrage intelligent** :
 
 > Ignore les appels de traduction existants (t("…"), i18n.t("…"), etc.).
+
 > Écarte les attributs JSX (ex. className="…") ou les imports.
 
 **Rapport de détection** : Production d’un rapport listant toutes les chaînes détectées, avec leur position dans le code.
