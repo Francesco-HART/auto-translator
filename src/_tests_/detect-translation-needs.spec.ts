@@ -15,7 +15,7 @@ describe("Detect translation needs in a project", () => {
       detectHardCodedStringGateway
     );
   });
-  describe("detect if need translation", () => {
+  describe("detect if need translation or not", () => {
     it("No text is found in the project", () => {
       const needTranslation = whenSearchingForTranslationNeeds([]);
       thenNoTranslationNeeded(needTranslation);
