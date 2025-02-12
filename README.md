@@ -25,10 +25,14 @@ pnpm add auto-translator
 
 ## Fonctionnalités
 
-Analyse AST : Scanne vos fichiers .ts, .tsx, .js, .jsx pour repérer les chaînes non traduites.
-Filtrage intelligent :
-Ignore les appels de traduction existants (t("…"), i18n.t("…"), etc.).
-Écarte les attributs JSX (ex. className="…") ou les imports.
-Rapport de détection : Production d’un rapport listant toutes les chaînes détectées, avec leur position dans le code.
-Génération de fichiers de langue (JSON, YAML, etc.) à partir de ce rapport, facilitant la création ou la mise à jour de vos fichiers i18n.
-Mode CLI + API TypeScript : Intégrez facilement dans vos scripts ou pipelines de build.
+**Analyse AST** : Scanne vos fichiers .ts, .tsx, .js, .jsx pour repérer les chaînes non traduites.
+**Filtrage intelligent** :
+
+> Ignore les appels de traduction existants (t("…"), i18n.t("…"), etc.).
+> Écarte les attributs JSX (ex. className="…") ou les imports.
+
+**Rapport de détection** : Production d’un rapport listant toutes les chaînes détectées, avec leur position dans le code.
+
+**Génération de fichiers de langue** (JSON, YAML, etc.) à partir de ce rapport, facilitant la création ou la mise à jour de vos fichiers i18n.
+
+**Mode CLI + API TypeScript** : Intégrez facilement dans vos scripts ou pipelines de build.
